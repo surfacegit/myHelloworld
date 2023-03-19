@@ -198,13 +198,18 @@ def isPalindrome(l1, l2):
 a = sys.stdin.readline().strip().split(' ')
 
 linked_list = SLL()
+""" Create linked list """
 linked_list = create_ll(a)
-
 print("Size of LL = ", linked_list.size())
-
 linked_list.print_list()
+
+""" Delete duplicates from the linked list """
 #linked_list.deleteDups()
-#returnKthtoLast(linked_list.head, 4)
+
+""" Return Kth to last item from the linked list scenario """
+returnKthtoLast(linked_list.head, 4)
+
+""" check whether the list is a Palindrome or not"""
 reverseList = SLL()
 reverseList = reverseandClone(linked_list.head)
 reverseList.print_list()
